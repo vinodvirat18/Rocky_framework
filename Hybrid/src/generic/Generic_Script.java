@@ -14,7 +14,7 @@ public class Generic_Script implements Constant_interface {
 public void openapp()
 {
 	System.setProperty(Gecko_key,Gecko_value);
-	
+	//for browser launch
  driver= new FirefoxDriver();
 	driver.get(url);
 }
@@ -23,7 +23,7 @@ public void closeapp(ITestResult res) {
 	if (ITestResult.FAILURE==res.getStatus()) {
 		Screen_shot.sc(driver);
 	}
-	
+	//to close the application
 	driver.close();
 	
 }
